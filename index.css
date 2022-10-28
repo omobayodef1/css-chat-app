@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+
+
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* style */
+body{
+  font-size: 16px;
+  background-color: hsl(270, 20%, 96%);
+  font-family: 'Rubik', sans-serif;
+}
+.container{
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 98vh;
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 94vh;
+}
+.phone-outline{
+  max-width: 250px;
+  padding: 0 10px 10px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 32px;
+  box-shadow: 0 10px 20px hsl(206, 6%, 79%);
+}
+.phone-cut{
+  position: relative;
+  top: 5px;
+  width: 150px;
+  height: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0 0 16px 16px;
+  
+}
+.phone-inner{
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+.phone-header{
+  color: White;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  border-radius: 20px 20px 10px 10px;
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  padding: 30px 10px 10px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.phone-header img{
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: inline-block;
+}
+.caret{
+  width: 20px;
+  margin-bottom: 7px;
+}
+.header-text{
+  margin: 0 auto 0 10px;
+}
+.phone-header h1{
+  font-size: 14px;
+  font-weight: 500;
+  
+}
+.phone-header p{
+  font-size: 10px;
+  opacity: 0.6;
+}
+.dot{
+  width: 15px;
+}
+.messages{
+  font-size: 10px;
+}
+.reply{
+  background-color: hsl(206, 6%, 79%);
+  max-width: 68%;
+  padding: 8px 10px;
+  color: hsl(276, 55%, 52%);
+  margin: 6px 8px;
+  border-radius: 10px 10px 20px 0;
+}
+.dogs{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+}
+.dogs img{
+  width: 52px;
+  margin: 5px;
+  border-radius: 20px;
+}
+.send{
+  background-color: white;
+  max-width: 69%;
+  width: fit-content;
+  margin: 6px 8px 6px auto;
+  padding: 8px 10px;
+  border-radius: 10px 10px 0 20px;
+  color: hsl(271, 15%, 43%);
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  max-width: 67%;
+  border-radius: 10px 10px 10px 0;
+  padding: 8px 20px 8px 10px;
+  margin: 6px 8px;
+  color: white;
+}
+.circle{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid hsl(289, 100%, 72%);
+}
+#hour{
+  margin: 0 auto 0 10px;
+  font-size: 8px;
+  opacity: 0.8;
+}
+.price{
+  font-weight: 700;
+}
+.text-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 25px;
+  margin: 8px 10px 0;
+}
+.text-box p{
+  opacity: 0.4;
+}
+.go{
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 50%;
+  color: #fff;
+  padding: 2px 6px;
+}
+.booking{
+  max-width: 430px;
+}
+.booking h1{
+  margin-bottom: 20px;
+}
+.booking p{
+  line-height: 2;
+  color: hsl(270, 7%, 64%);
+  font-size: 15px;
+}
+.attribution { font-size: 11px; text-align: center; padding-bottom: 20px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* for some property of media query to work it need to be place at the buttom */
+@media (min-width: 200px) and (max-width: 750px){
+  .container{
+    margin-top: 40px;
+  }
+  main{
+    flex-direction: column;
+  }
+  .booking{
+    text-align: center;
+    margin: 50px 0;
+    padding: 0 30px;
+  }
+}
